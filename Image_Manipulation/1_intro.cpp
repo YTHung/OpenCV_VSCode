@@ -1,9 +1,14 @@
-#include <iostream>
-#include <opencv2/opencv.hpp>
+/*
+In this code, we will dive into the code and check out what are the functions available in OpenCV for manipulating images.
 
-using namespace std;
-using namespace cv;
-//using namespace matplotlibcpp;
+We will cover the following:
+
+1. Image I/O - Read, Write & Display an image
+2. Image Properties - color, channels, shape, image structure
+3. Creating new images, accessing pixels and region of interest (ROI)
+*/
+
+#include "ImgManipulate.h"
 
 string type2str(int type) {
     string r;
@@ -28,7 +33,7 @@ string type2str(int type) {
     return r;
 }
 
-int main() {
+int intro() {
     cout << "Hello, World!" << endl;
     cout << "OpenCV version is " << CV_VERSION << endl;
 
@@ -134,6 +139,32 @@ int main() {
     imshow("Img", testImage);
     waitKey(0);
     destroyAllWindows();
+
+
+
+    // ------------------------------- Image with Alpha Channel -------------------------------
+    imagePath = "Img/panther.png";
+    Mat imgPNG = imread(imagePath, -1); // -1: unchanged image, read the image as is.
+    cout << "image size = " << imgPNG.size() << endl;
+    cout << "number of channels = " << imgPNG.channels() << endl;
+
+    // split and merge the panther image
+    Mat imgBGR;
+    Mat imgPNGChannels[4];
+    split(imgPNG, imgPNGChannels);     // split the data into 4 values - BGR and alpha channels, where alpha ch stores transparency information.
+    merge(imgPNGChannels, 3, imgBGR);  // merge the data into one colour image
+    Mat imgMask = imgPNGChannels[3];   
+    
+    imshow("imgBGR", imgBGR);    // show colour only image
+    imshow("imgMask", imgMask);  // show alpah mask image
+    waitKey(0);
+    destroyAllWindows();
+    /*
+    Note:
+    You can see the whiskers very clearly in the mask image. The alpha mask is basically a very accurate segmentation of the image.
+    It is useful for creating overlays ( Augmented Reality type of applications ). If you don't have tha alpha mask, 
+    then you have to separate out the whiskers from the white background ( see original image above ) which can be very difficult.
+    */
 
     return 0;
 }

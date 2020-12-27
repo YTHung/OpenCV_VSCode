@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="source.cpp" />
+    <ClCompile Include="2_basic_image_operation.cpp" />
+    <ClCompile Include="1_intro.cpp" />
+    <ClCompile Include="Source_Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Img\number_zero.jpg" />
+    <ClInclude Include="ImgManipulate.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

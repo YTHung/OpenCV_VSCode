@@ -15,13 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Img\number_zero.jpg">
-      <Filter>資源檔</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="source.cpp">
+    <ClCompile Include="1_intro.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="2_basic_image_operation.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Source_Main.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ImgManipulate.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
