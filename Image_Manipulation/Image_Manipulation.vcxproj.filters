@@ -24,6 +24,18 @@
     <ClCompile Include="Source_Main.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="3_mathematical operation.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="4_application_sunglass_filter.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="5_bitwise_operation.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="6_annotate_image.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ImgManipulate.h">
