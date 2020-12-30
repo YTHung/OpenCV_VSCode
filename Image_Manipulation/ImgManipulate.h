@@ -12,3 +12,4 @@ int Mathematical_Operation();	// from 3. cpp
 int Sunglass_filter();          // from 4. cpp
 int Bitwise_Operation();        // from 5. cpp
 int Annotate_Image();			// from 6. cpp
+int QR_Code_Detector();

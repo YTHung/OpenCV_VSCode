@@ -36,6 +36,9 @@
     <ClCompile Include="6_annotate_image.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="7_QR_Code_Detector.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ImgManipulate.h">

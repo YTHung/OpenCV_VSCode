@@ -88,7 +88,7 @@ int Annotate_Image() {
 
 
 	//-------------------- Add Text --------------------
-	// Put text on image
+	// a. Put text on image
 	Mat imageText = image.clone();
 	string text = "I am studying";
 	double fontScale = 1.5;
@@ -109,7 +109,7 @@ int Annotate_Image() {
 		Second, You can see the bottom part of the text is slightly clipped. 
 		This happens because we dont know how big the text will look on the image.
 	*/
-	// Get font size from pixel height of text
+	// b. Get font size from pixel height of text
 	int pixelHeight = 20;
 
 	// Calculate the fontScale
@@ -125,7 +125,7 @@ int Annotate_Image() {
 	destroyAllWindows();
 
 
-	// Get height and width of text
+	// c. Get height and width of text
 	Mat imageGetTextSize;
 	imageGetTextSize = image.clone();
 	int imageHeight = imageGetTextSize.rows;

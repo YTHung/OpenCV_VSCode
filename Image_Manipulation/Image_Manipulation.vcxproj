@@ -25,6 +25,7 @@
     <ClCompile Include="4_application_sunglass_filter.cpp" />
     <ClCompile Include="5_bitwise_operation.cpp" />
     <ClCompile Include="6_annotate_image.cpp" />
+    <ClCompile Include="7_QR_Code_Detector.cpp" />
     <ClCompile Include="Source_Main.cpp" />
   </ItemGroup>
   <ItemGroup>

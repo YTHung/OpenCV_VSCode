@@ -7,5 +7,6 @@ int main() {
 	//Mathematical_Operation();
 	//Sunglass_filter();
 	//Bitwise_Operation();
-	Annotate_Image();
+	//Annotate_Image();
+	QR_Code_Detector();
 }
