@@ -16,7 +16,7 @@ void display(Mat& im, vector<Point>& bbox)
 int QR_Code_Detector() {
 	
 
-	// Read image and store it in variable img
+	//-------------------- Step 1. Read image and store it in variable img --------------------
 	string imgPath = "img/QR_Code_Detector/IDCard-Satya.png";
 	Mat img = imread(imgPath);
 	cout << img.size().height << " " << img.size().width << endl;    // output: 204 324
@@ -29,7 +29,7 @@ int QR_Code_Detector() {
 	vector<Point> bbox;  // positions of qr code
 	Mat	rectifiedImage;  // qr code image
 
-	// Detect QR Code in the Image
+	//-------------------- Detect QR Code in the Image --------------------
 	string opencvData = qrDecoder.detectAndDecode(img, bbox, rectifiedImage);
 
 	// Check if a QR Code has been detected
