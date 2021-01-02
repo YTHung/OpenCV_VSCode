@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4005f1c4-aac1-4e8b-bf77-f164074c4c48}</ProjectGuid>
-    <RootNamespace>Topic2VedioIOAndGUI</RootNamespace>
+    <ProjectGuid>{85dbbe28-8b9e-4640-9afd-06c1e60a5111}</ProjectGuid>
+    <RootNamespace>Topic3BinaryImageProcessing</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Topic2_VideoIO_And_GUI</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -146,16 +145,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="1_VideoRead.cpp" />
-    <ClCompile Include="2_VideoWrite.cpp" />
-    <ClCompile Include="3_UsingKeyboard_as_InputDevice.cpp" />
-    <ClCompile Include="4_Mouse_for_Annotation.cpp" />
-    <ClCompile Include="5_FaceAnnotationTool.cpp" />
-    <ClCompile Include="6_Trackbar_Controller.cpp" />
-    <ClCompile Include="Source_Main.cpp" />
+    <ClCompile Include="1_Thresholding.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="VideoIO_GUI.h" />
+    <ClInclude Include="BinaryImageProcessing.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

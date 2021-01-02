@@ -7,7 +7,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCV_Example_project", "O
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Image_Manipulation", "Image_Manipulation\Image_Manipulation.vcxproj", "{0D9AFF08-EA6E-4FDB-8B75-F76B0B026485}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Topic2_VedioIO_And_GUI", "Topic2_VedioIO_And_GUI\Topic2_VedioIO_And_GUI.vcxproj", "{4005F1C4-AAC1-4E8B-BF77-F164074C4C48}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Topic2_VideoIO_And_GUI", "Topic2_VedioIO_And_GUI\Topic2_VedioIO_And_GUI.vcxproj", "{4005F1C4-AAC1-4E8B-BF77-F164074C4C48}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Topic3_Binary_Image_Processing", "Topic3_Binary_Image_Processing\Topic3_Binary_Image_Processing.vcxproj", "{85DBBE28-8B9E-4640-9AFD-06C1E60A5111}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,14 @@ Global
 		{4005F1C4-AAC1-4E8B-BF77-F164074C4C48}.Release|x64.Build.0 = Release|x64
 		{4005F1C4-AAC1-4E8B-BF77-F164074C4C48}.Release|x86.ActiveCfg = Release|Win32
 		{4005F1C4-AAC1-4E8B-BF77-F164074C4C48}.Release|x86.Build.0 = Release|Win32
+		{85DBBE28-8B9E-4640-9AFD-06C1E60A5111}.Debug|x64.ActiveCfg = Debug|x64
+		{85DBBE28-8B9E-4640-9AFD-06C1E60A5111}.Debug|x64.Build.0 = Debug|x64
+		{85DBBE28-8B9E-4640-9AFD-06C1E60A5111}.Debug|x86.ActiveCfg = Debug|Win32
+		{85DBBE28-8B9E-4640-9AFD-06C1E60A5111}.Debug|x86.Build.0 = Debug|Win32
+		{85DBBE28-8B9E-4640-9AFD-06C1E60A5111}.Release|x64.ActiveCfg = Release|x64
+		{85DBBE28-8B9E-4640-9AFD-06C1E60A5111}.Release|x64.Build.0 = Release|x64
+		{85DBBE28-8B9E-4640-9AFD-06C1E60A5111}.Release|x86.ActiveCfg = Release|Win32
+		{85DBBE28-8B9E-4640-9AFD-06C1E60A5111}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
