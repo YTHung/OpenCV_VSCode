@@ -9,3 +9,4 @@ using namespace cv;
 
 int Thresholding();
 int ErosionDilation();
+int MorphologicalOperation();

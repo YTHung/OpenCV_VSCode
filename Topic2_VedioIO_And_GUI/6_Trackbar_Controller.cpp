@@ -27,22 +27,20 @@ int scaleType = 0;
 int maxType = 1;
 
 Mat im;
-
 string windowName = "Resize Image";
 string trackbarValue = "Scale";
 string trackbarType = "Type: \n 0: Scale Up \n 1: Scale Down";
 
+
 // Callback functions
 void scaleImage(int, void*) {							 // TrackerbarCallback(int, void*): 
+	Mat scaledImage;	// the object which store the resized image
 
-	if (scaleType == 1)	scaleFactor = -scaleFactor;
+	if (scaleType == 1)	scaleFactor = -scaleFactor;		 // If scaleType set to 1, downscale the image 
 	
 	double scaleFactorDouble = 1 + scaleFactor / 100.0;  // Scale up 1% in one trackbar value
-	if (scaleFactorDouble == 0) {
-		scaleFactorDouble = 1;
-	}
-	
-	Mat scaledImage;
+	if (scaleFactorDouble == 0) scaleFactorDouble = 1;
+
 	resize(im, scaledImage, Size(), scaleFactorDouble, scaleFactorDouble, INTER_LINEAR);
 	imshow(windowName, scaledImage);
 }

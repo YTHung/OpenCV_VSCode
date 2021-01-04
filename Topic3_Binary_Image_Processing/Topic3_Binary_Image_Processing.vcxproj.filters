@@ -24,6 +24,9 @@
     <ClCompile Include="2_Erosion_and_Dilation.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="Topic3_Implementation_MorphologicalOperation.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinaryImageProcessing.h">

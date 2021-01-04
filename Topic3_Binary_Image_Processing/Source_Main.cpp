@@ -3,8 +3,8 @@
 
 int main() {
 	//Thresholding();
-	ErosionDilation();
-
+	//ErosionDilation();
+	MorphologicalOperation();
 
 
 	return 0;

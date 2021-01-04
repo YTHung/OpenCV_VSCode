@@ -1,13 +1,16 @@
 /*
 	Note:
-	  1. Dilation is used to merge or expand white regions which may be close to each other and
-	  2. Erosion is used to separate or shrink white regions
+		1. Dilation is used to merge or expand white regions which may be close to each other 
+			ref: https://www.youtube.com/watch?v=xO3ED27rMHs&feature=emb_title
+		2. Erosion is used to separate or shrink white regions
+			ref: https://www.youtube.com/watch?time_continue=48&v=fmyE7DiaIYQ&feature=emb_title
 */
+
 #include "BinaryImageProcessing.h"
 
 int ErosionDilation() {
 	string imageName = "resources/dilation_example.jpg";
-	int kSize1 = 7, kSize2 = 3;			// the size of kernel
+	int kSize1 = 7, kSize2 = 3;			// the size of kernels
 	Mat kernel1 = getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(kSize1, kSize1));
 	Mat kernel2 = getStructuringElement(cv::MORPH_ELLIPSE, cv::Size(kSize2, kSize2));
 
