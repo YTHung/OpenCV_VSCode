@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCV_Example_project", "OpenCV_Example_project\OpenCV_Example_project.vcxproj", "{E0A46418-9CD7-4040-8511-94BEC9E7BD8A}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Image_Manipulation", "Image_Manipulation\Image_Manipulation.vcxproj", "{0D9AFF08-EA6E-4FDB-8B75-F76B0B026485}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Topic2_VideoIO_And_GUI", "Topic2_VedioIO_And_GUI\Topic2_VedioIO_And_GUI.vcxproj", "{4005F1C4-AAC1-4E8B-BF77-F164074C4C48}"
@@ -19,14 +17,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E0A46418-9CD7-4040-8511-94BEC9E7BD8A}.Debug|x64.ActiveCfg = Debug|x64
-		{E0A46418-9CD7-4040-8511-94BEC9E7BD8A}.Debug|x64.Build.0 = Debug|x64
-		{E0A46418-9CD7-4040-8511-94BEC9E7BD8A}.Debug|x86.ActiveCfg = Debug|Win32
-		{E0A46418-9CD7-4040-8511-94BEC9E7BD8A}.Debug|x86.Build.0 = Debug|Win32
-		{E0A46418-9CD7-4040-8511-94BEC9E7BD8A}.Release|x64.ActiveCfg = Release|x64
-		{E0A46418-9CD7-4040-8511-94BEC9E7BD8A}.Release|x64.Build.0 = Release|x64
-		{E0A46418-9CD7-4040-8511-94BEC9E7BD8A}.Release|x86.ActiveCfg = Release|Win32
-		{E0A46418-9CD7-4040-8511-94BEC9E7BD8A}.Release|x86.Build.0 = Release|Win32
 		{0D9AFF08-EA6E-4FDB-8B75-F76B0B026485}.Debug|x64.ActiveCfg = Debug|x64
 		{0D9AFF08-EA6E-4FDB-8B75-F76B0B026485}.Debug|x64.Build.0 = Debug|x64
 		{0D9AFF08-EA6E-4FDB-8B75-F76B0B026485}.Debug|x86.ActiveCfg = Debug|Win32

@@ -10,3 +10,6 @@ using namespace cv;
 int Thresholding();
 int ErosionDilation();
 int MorphologicalOperation();
+int Assignment();
+int OpeningClosing();
+int CCA();

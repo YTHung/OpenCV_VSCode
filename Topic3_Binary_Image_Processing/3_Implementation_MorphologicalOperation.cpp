@@ -98,6 +98,7 @@ int MorphologicalOperation() {
 	dilate(demoImage, dilatedEllipseKernel, element);
 	cout << dilatedEllipseKernel << endl;
 
+
 	imshow("image", dilatedEllipseKernel * 255);
 	waitKey(0);
 

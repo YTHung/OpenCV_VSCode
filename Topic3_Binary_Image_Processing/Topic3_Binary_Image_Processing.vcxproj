@@ -147,8 +147,11 @@
   <ItemGroup>
     <ClCompile Include="1_Thresholding.cpp" />
     <ClCompile Include="2_Erosion_and_Dilation.cpp" />
+    <ClCompile Include="5_Opening_Closing.cpp" />
+    <ClCompile Include="6_ConnectedComponentAnalysis.cpp" />
     <ClCompile Include="Source_Main.cpp" />
-    <ClCompile Include="Topic3_Implementation_MorphologicalOperation.cpp" />
+    <ClCompile Include="4_Assignment.cpp" />
+    <ClCompile Include="3_Implementation_MorphologicalOperation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinaryImageProcessing.h" />

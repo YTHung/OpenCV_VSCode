@@ -4,8 +4,10 @@
 int main() {
 	//Thresholding();
 	//ErosionDilation();
-	MorphologicalOperation();
-
+	//MorphologicalOperation();
+	//Assignment();
+	//OpeningClosing();
+	CCA();
 
 	return 0;
 }
