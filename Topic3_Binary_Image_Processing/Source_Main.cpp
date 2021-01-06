@@ -5,9 +5,12 @@ int main() {
 	//Thresholding();
 	//ErosionDilation();
 	//MorphologicalOperation();
-	//Assignment();
+	Assignment_writeFromScratch();
 	//OpeningClosing();
-	CCA();
-
+	//CCA();
+	//Contour();
+	//BlobDetection();
+	
+	
 	return 0;
 }

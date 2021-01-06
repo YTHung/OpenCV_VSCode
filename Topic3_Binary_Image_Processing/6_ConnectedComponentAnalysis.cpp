@@ -12,8 +12,9 @@
 	image processing: the input and output are image
 	computer vision: the input is an image, and the output is some kind of the information.
 
-	Computer vision algorithm -  Connected Component Analysis (CCA): label blobs in a binary image
-	two pass algorithm
+	Computer vision algorithm (two pass algorithm is common used) -  Connected Component Analysis (CCA): label blobs in a binary image
+		- CT cross-section to label different element
+		- clustering algorithm
 */
 
 #include "BinaryImageProcessing.h"
@@ -45,7 +46,7 @@ int CCA() {
 	int nComponents = connectedComponents(imThresh, imLabels);	
 	cout << "The number of connected components: " << nComponents << endl; // TRUTH and background = 6
 
-	Mat imLabelsCopy = imLabels.clone();
+	Mat imLabelsCopy = imLabels.clone();  // to save the original image
 
 	// Find the min and max values in imLabels
 	Point minLoc, maxLoc;
@@ -73,8 +74,37 @@ int CCA() {
 	waitKey(0);
 
 	//--------------------------- Colour coding of components ---------------------------
+	/*
+	Since it is a bit difficult to visualize the difference in intensity value in grayscale images, 
+	we apply a colormap so that grayscale values are converted to color for the purpose of display.
+	
+	Step1. find the min and max values in the image
+	Step2. nomalize the image to 0 ~ 255
+	Step3. apply colormap on the labelled image
 
+	OpenCV defines 12 colormaps that can be applied to a grayscale image using the function applyColorMap to produce a pseudocolored image. 
+	We will use COLORMAP_JET for our example.
+	*/
 
+	// Make a copy of the image
+	imLabels = imLabelsCopy.clone();
+
+	// find the min and max values in imLabels
+	double minValue2, maxValue2;
+	minMaxLoc(imLabels, &minValue2, &maxValue2, &minLoc, &maxLoc);
+
+	// Normalize the image so the min value is 0 and max value is 255.
+	imLabels = 255 * (imLabels - minValue2) / (maxValue2 - minValue2);
+
+	// Convert image to 8-bits
+	imLabels.convertTo(imLabels, CV_8U);
+
+	// Apply a color map
+	Mat imColorMap;
+	applyColorMap(imLabels, imColorMap, COLORMAP_JET);  // blue to red
+	imshow("colormap", imColorMap); 
+	waitKey(0);
+	destroyAllWindows();
 
 	return 0;
 }

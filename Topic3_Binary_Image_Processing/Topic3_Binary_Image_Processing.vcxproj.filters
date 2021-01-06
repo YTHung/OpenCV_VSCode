@@ -24,9 +24,6 @@
     <ClCompile Include="2_Erosion_and_Dilation.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
-    <ClCompile Include="4_Assignment.cpp">
-      <Filter>來源檔案</Filter>
-    </ClCompile>
     <ClCompile Include="3_Implementation_MorphologicalOperation.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
@@ -34,6 +31,15 @@
       <Filter>來源檔案</Filter>
     </ClCompile>
     <ClCompile Include="6_ConnectedComponentAnalysis.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="7_Contours.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="8_Blob_Detection.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="4_Assignment_writeFromScratch.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
   </ItemGroup>

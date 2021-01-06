@@ -4,12 +4,14 @@
 
 #include "BinaryImageProcessing.h"
 
-int Assignment() {
+int Assignment_writeFromScratch() {
 
 	//----------------------- Create a source image -----------------------
 	Mat demoImage = Mat::zeros(Size(10, 10), CV_8U);	// Create a 10 by 10 image
+	Mat resizedDemoImg;	   // to store the resized demoImage
+	resize(demoImage, resizedDemoImg, Size(100, 100), 0, 0, INTER_NEAREST);
 	cout << "Original intensity of image: " << endl << demoImage << endl;
-	imshow("intensity of the image", demoImage);
+	imshow("intensity of the image", resizedDemoImg);
 	waitKey(0);
 
 	// Manipulate the intensity of interest pixels
@@ -19,7 +21,8 @@ int Assignment() {
 	demoImage.at<uchar>(2, 2) = 1;
 	demoImage(Range(5, 8), Range(5, 8)).setTo(1);
 	cout << demoImage << endl;
-	imshow("intensity of the image", demoImage * 255);
+	resize(demoImage, resizedDemoImg, Size(100, 100), 0, 0, INTER_NEAREST);
+	imshow("intensity of the image", resizedDemoImg * 255);
 	waitKey(0);
 
 	// Create a cross structuring element
@@ -76,7 +79,7 @@ int Assignment() {
 				cout << "Result of padded and dilated image: " << endl << paddedDilatedImage << endl << endl;
 
 				// video write
-				resize(paddedDilatedImage, resizedFrame, Size(50, 50));
+				resize(paddedDilatedImage, resizedFrame, Size(50, 50), 0, 0, INTER_NEAREST);
 				cvtColor(resizedFrame * 255, resizedFrame, COLOR_GRAY2BGR);
 				outavi.write(resizedFrame);
 			}
@@ -124,7 +127,7 @@ int Assignment() {
 			cout << "Result of padded and dilated image: " << endl << paddedErodedImage << endl << endl;
 
 			// video write
-			resize(paddedErodedImage, resizedFrame, Size(50, 50));
+			resize(paddedErodedImage, resizedFrame, Size(50, 50), 0, 0, INTER_NEAREST);
 			cvtColor(resizedFrame * 255, resizedFrame, COLOR_GRAY2BGR);
 			outavi_erosion.write(resizedFrame);
 		}

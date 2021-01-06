@@ -64,8 +64,8 @@ int Basic_Image_Operation() {
 	int resizeUpWidth = 600;
 	int resizeUpHeight = 900;
 	Mat resizeDown, resizeUp;
-	resize(image, resizeDown, Size(resizeDownWidth, resizeDownHeight), INTER_LINEAR);
-	resize(image, resizeUp, Size(resizeUpWidth, resizeUpHeight), INTER_LINEAR);
+	resize(image, resizeDown, Size(resizeDownWidth, resizeDownHeight), 0, 0, INTER_LINEAR);
+	resize(image, resizeUp, Size(resizeUpWidth, resizeUpHeight), 0, 0, INTER_LINEAR);
 	imshow("image", image);
 	imshow("image scaled up", resizeUp);
 	imshow("image scaled down", resizeDown);
