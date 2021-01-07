@@ -42,6 +42,12 @@
     <ClCompile Include="4_Assignment_writeFromScratch.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="9_Coin_Detection.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="Coin_Detection_using_Camera.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinaryImageProcessing.h">

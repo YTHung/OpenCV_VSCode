@@ -3,7 +3,7 @@
 	While the CAA and Contour can finds the general blobs, blob detector helps us to find "particular blobs".
 
 
-    **** How does Blob detection work?
+    **** How does Blob detection work? ****
     SimpleBlobDetector, as the name implies, is based on a rather simple algorithm described below. The algorithm is controlled by parameters ( shown in bold below ) and has the following steps. Scroll down to know how the parameters are set.
 
     1. Thresholding : Convert the source images to several binary images by thresholding the source image with thresholds starting at minThreshold. These thresholds are incremented by thresholdStep until maxThreshold. So the first threshold is minThreshold, the second is minThreshold + thresholdStep, the third is minThreshold + 2 x thresholdStep, and so on.

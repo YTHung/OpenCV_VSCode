@@ -11,6 +11,8 @@
 	2. Rectangular shaped
 	3. Cross shaped
 
+
+	// ref: https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html
 	--------------------------------------------------------------------------------------------
 	There are two methods 
 	Method 1:
@@ -29,6 +31,7 @@
 
 	Note. In Range(_start, _end), start is an inclusive left boundary of the range and end is an exclusive right boundary of the range. 
 		  Such a half-opened interval is usually denoted as [start,end).
+
 */
 
 

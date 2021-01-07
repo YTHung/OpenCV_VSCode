@@ -15,3 +15,5 @@ int OpeningClosing();
 int CCA();
 int Contour();
 int BlobDetection();
+int Coin_Detection();
+int CoinDetection_Camera();

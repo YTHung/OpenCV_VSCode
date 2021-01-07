@@ -151,6 +151,8 @@
     <ClCompile Include="6_ConnectedComponentAnalysis.cpp" />
     <ClCompile Include="8_Blob_Detection.cpp" />
     <ClCompile Include="7_Contours.cpp" />
+    <ClCompile Include="9_Coin_Detection.cpp" />
+    <ClCompile Include="Coin_Detection_using_Camera.cpp" />
     <ClCompile Include="Source_Main.cpp" />
     <ClCompile Include="4_Assignment_writeFromScratch.cpp" />
     <ClCompile Include="3_Implementation_MorphologicalOperation.cpp" />
