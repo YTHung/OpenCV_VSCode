@@ -163,7 +163,7 @@ int Coin_Detection() {
 		}
 	}
 	cout << "Maximum area of contour = " << contourArea(contoursList[biggestElement]) << endl;
-
+	
 
 	// Remove this contour and plot others
 	contoursList.pop_back();    // remove the last element in the vector
@@ -197,7 +197,7 @@ int Coin_Detection() {
 	cvtColor(image, imageGray, COLOR_BGR2GRAY);
 	displayImage("image in gray", imageGray, false);
 
-	// Split cell into channels
+	// Split image into channels
 	split(image, imgRGBChannels);
 	imageB = imgRGBChannels[0];
 	imageG = imgRGBChannels[1];
